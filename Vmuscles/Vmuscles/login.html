@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: url("xyz.jpg");
+        background-repeat: no-repeat;
+        background-size: 1550px 770px;
+    }
+    .login{
+        text-align: center;
+        margin-top: 150px;
+        font-size: 75px;
+        color:aquamarine;
+        
+    }
+    .username{
+        margin-top: 50px;
+        margin-left: 600px;
+        color: lightblue;
+        background-image: url("user.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 100px;
+        font-size: 20px;
+
+    }
+    .password{
+        margin-left: 605px;
+        margin-top: 20px;
+        color: lightblue;
+        background-image: url("padlock.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 95px;
+        font-size: 20px;
+    }
+    input{
+     
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    .button{
+        margin-top: 10px;
+        margin-left: 700px;
+        size: 50px;
+    }
+    #inlines{
+        display:inline-block;
+    }
+
+</style>
+<body>
+    <form>
+        <div class="login">LOGIN</div>
+        <div class="username" name="username">Username : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="username"/></div>
+        
+        <div class="password" name="password">Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input  type="text"  id="password"/></div>
+       <br></br>
+        <div class="button">
+            <button id="submit" onclick="auth()" >submit</button> 
+            &nbsp;  &nbsp;  &nbsp;
+            <button >cancel</button>
+        </div>
+       
+    </form>
+    
+</body>
+
+<script>
+
+
+function auth() {
+
+     var username = document.getElementById("username").value;
+     var password = document.getElementById("password").value;
+     
+       
+     if (username == "a" && password == "b") {
+        alert("logged in succesfully");
+          window.open("muscle.html");
+     }  
+      else{
+         alert("Please enter valid information");
+         return;
+     }
+}
+
+
+</script>
+</html>

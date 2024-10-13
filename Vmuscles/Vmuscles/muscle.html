@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMuscles</title>
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+</head>
+<style>
+       #abc{
+    background-color:white;
+    width: 1520px;
+    padding: 20px;
+    font-size:xx-large;
+    height: 30px;
+    color: black;
+   }
+   *{
+    margin: 0;padding: 0;
+   }
+   body{
+    background:#d7cec7;
+   }
+    #background{
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    width: 100%;
+    height: 600px;
+    width: 900px;
+    margin-top: 102px;
+    margin-left: 388px;
+}
+    #shoulders-a{
+    border: 0;
+    top: 31%;
+    left: 45.5%;
+    width: 30px;
+    display: block;
+    position: absolute;
+    height: 38px;
+    }
+
+    #shoulders-b{
+    border: 0;
+    top: 31%;
+    left: 56.1%;
+    width: 30px;
+    display: block;
+    position: absolute;
+    height: 40px;
+    }
+
+    #biceps-a{
+    border: 0;
+    top: 37.3%;
+    left: 43.8%;
+    width: 32px;
+    display: block;
+    position: absolute;
+    height: 42px;
+    }
+
+    #biceps-b{
+    border: 0;
+    top: 37.3%;
+    left: 57.0%;
+    width: 39px;
+    display: block;
+    position: absolute;
+    height: 40px;
+    }
+
+    #chest-a{
+    border: 0;
+    top: 32%;
+    left: 47.9%;
+    width: 47px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    }
+
+    #chest-b{
+    border: 0;
+    top: 32%;
+    left: 52.1%;
+    width: 48px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    }
+
+    #abs{
+    border: 0;
+    top: 42%;
+    left: 49.8%;
+    width: 59px;
+    display: block;
+    position: absolute;
+    height: 65px;
+    }
+
+    #leg-a{
+    border: 0;
+    top: 57.6%;
+    left: 47.4%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 90px;
+    }
+
+    #leg-b{
+    border: 0;
+    top: 57.6%;
+    left: 52.5%;
+    width: 50px;
+    display: block;
+    position: absolute;
+    height: 90px;
+    }
+
+    #calves-a{
+    border: 0;
+    top: 75.8%;
+    left: 73.2%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 59px;
+    }
+
+    #calves-b{
+    border: 0;
+    top: 75.8%;
+    left: 81.0%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 59px;
+    }
+    
+    #hamstring-a{
+    border: 0;
+    top: 60.6%;
+    left: 73.9%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 80px;
+    }
+
+    #hamstring-b{
+    border: 0;
+    top: 60.6%;
+    left: 79.9%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 80px;
+    }
+
+    #glutes{
+    border: 0;
+    top: 52.0%;
+    left: 75.1%;
+    width: 96px;
+    display: block;
+    position: absolute;
+    height: 59px;
+    }
+
+    #lats-a{
+    border: 0;
+    top: 36.8%;
+    left: 74.2%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 60px;
+    transform: rotate(10deg);
+    }
+
+    #lats-b{
+    border: 0;
+    top: 36.8%;
+    left: 79.3%;
+    width: 42px;
+    display: block;
+    position: absolute;
+    height: 60px;
+    transform: rotate(170deg);
+    }
+
+    #traps{
+    border: 0;
+    top:29.8%;
+    left: 76.5%;
+    width: 56px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    
+    }
+
+    #tricep-a{
+    border: 0;
+    top: 37.3%;
+    left: 70.5%;
+    width: 38px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    transform: rotate(30deg);
+    } 
+
+    #tricep-b{
+    border: 0;
+    top: 36.8%;
+    left: 83.5%;
+    width: 38px;
+    display: block;
+    position: absolute;
+    height: 50px;
+    transform: rotate(140deg);
+    }    
+    button{
+       background:0px;
+       
+       
+    }
+    span{
+        color:rgb(198, 31, 64)
+    }
+
+    
+    #a{
+        position: fixed;
+    }
+    #ab{
+        margin-left: 600px;
+    }
+    #abcc{
+        margin-top: 50px;
+    }
+</style>
+<body>
+   <b><div  id="abc" > <span>V</span>Muscles</div> </b>
+   <div id="a">
+    <div id="ab">    <h2>Tap on the muscle for magic...!!</h2></div>
+
+    <img id="background" src="m.png" >
+    <div id="abcc"> 
+    <button onclick="shoulder()"  id="shoulders-a" > </button>
+    <button onclick="shoulder()"  id="shoulders-b" > </button>
+    <button onclick="bicep()"  id="biceps-a" > </button>
+    <button onclick="bicep()"  id="biceps-b" > </button>
+    <button onclick="chest()"  id="chest-a" > </button>
+    <button onclick="chest()"  id="chest-b" > </button>
+    <button onclick="abs()"  id="abs" > </button>
+    <button onclick="leg()"  id="leg-a" >  </button>
+    <button onclick="leg()"  id="leg-b" >  </button>
+    <button onclick="calves()"  id="calves-a" >  </button>
+    <button onclick="calves()"  id="calves-b" >  </button>
+    <button onclick="hamstring()"  id="hamstring-a" >  </button>
+    <button onclick="hamstring()"  id="hamstring-b" >  </button>
+    <button onclick="glutes()"  id="glutes" >  </button> 
+    <button onclick="lats()"  id="lats-a" >  </button>
+    <button onclick="lats()"  id="lats-b" >  </button>
+    <button onclick="traps()"  id="traps" >  </button>
+    <button onclick="triceps()"  id="tricep-a" >  </button>
+    <button onclick="triceps()"  id="tricep-b" >  </button>
+</div>
+</div>
+
+</body>
+
+<script>
+    function shoulder() {   
+window.open("shoulder.html");  
+}   
+
+function chest() {   
+window.open("chest.html");  
+}   
+
+function bicep() {   
+window.open("bicep.html");  
+} 
+
+function abs() {   
+window.open("abs.html");  
+} 
+
+function leg() {   
+window.open("leg.html");  
+} 
+
+function calves() {   
+window.open("calves.html");  
+} 
+
+function hamstring() {   
+window.open("hamstring.html");  
+}
+
+function glutes() {   
+window.open("glutes.html");  
+}
+
+function lats() {   
+window.open("lat.html");  
+}
+   
+function traps() {   
+window.open("traps.html");  
+}
+
+function triceps() {   
+window.open("tricep.html");  
+}
+
+</script>
+</html>
+

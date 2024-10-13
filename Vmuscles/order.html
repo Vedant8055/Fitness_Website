@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+          font-family: Arial;
+          font-size: 17px;
+          padding: 8px;
+        }
+        
+        
+        
+        input[type=text] {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        
+        
+        .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px;
+          margin: 10px 0;
+          border: none;
+          width: 100%;
+          border-radius: 3px;
+         font-size: 17px;
+        }
+        
+        .btn:hover {
+          background-color: #45a049;
+        }
+        
+        </style>
+    
+        <body>
+            <form>
+            
+                
+                  
+                    <h3>Billing Address</h3>
+                    <label > Full Name</label>
+                    <input type="text"  placeholder="John M. Doe" required>
+                    <label > Email</label>
+                    <input type="text" id="email" placeholder="john@example.com" required >
+                    <label > Address</label>
+                    <input type="text"  placeholder="542 W. 15th Street" required>
+                    <label >City</label>
+                    <input type="text" placeholder="New York" required>
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY" required>
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001" required>
+                     <input type="submit" onclick="fun()" value="Continue to checkout" class="btn">
+              </form>
+         <script>
+          function fun(){
+              var eml=document.getElementById("email").value;
+              var eml_pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+              if(!eml.includes("@gmail.com")){
+                alert("email is invalid");
+              }
+              else{
+                alert("ordered succesfully explore our website");
+                window.open("main.html");
+              }
+            }
+            
+            
+         </script>
+</body>
+</html>

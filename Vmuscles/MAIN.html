@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMuscles</title>
+</head>
+<style>
+    body{
+       background-image: url("img/1.png");
+       height: 500px;
+       width: 100px;
+       background-repeat: no-repeat;
+    }
+    
+    #bar{
+        top: 0%;
+        left: 0%;
+        position:absolute;
+        color: white;
+        background-color: #181818;
+        height: 70px;
+        width: 1920px;
+    }
+    #home{
+        margin-left: 20px;
+        font-size: x-large;
+        font-family: 'Comic Sans MS';
+    }
+    #store{
+        margin-right: 20px;
+        margin-left: 1350px;
+        margin-top: 28px;
+        background: 0px;
+        color: white;
+        border: 0px;
+        font-size:large;
+        font-family: 'Ink Free';
+    }
+  
+    #about{
+        margin-left: 30px;
+        margin-top: 28px;
+        background: 0px;
+        color: white;
+        border: 0px;
+        font-size:large;
+        font-family: 'Ink Free';
+    }
+    #login{
+        margin-left: 30px;
+        margin-top: 28px;
+        background: 0px;
+        color: white;
+        border: 0px;
+        font-size:large;
+        font-family: 'Ink Free';
+    }
+    .dropbtn {
+   
+   background-color: #181818;
+   color: white;
+   padding: 16px;
+   font-size:large;
+   font-family: 'Ink Free';
+   border: none;
+   cursor: pointer;
+}
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+.dropdown-content a:hover {
+   background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+} 
+#shape{
+        color: #ffffff;
+        font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        font-size: 150px;
+        margin-bottom: -9px;
+	   margin-left: 100px;
+    }
+    #your{
+        color: #ffffff;
+        font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        font-size: 150px; 
+        padding:0px;
+	    margin:0px;
+        margin-left: 100px;
+    }
+    #body{
+        color: #ffffff;
+        font-family: Copperplate, Copperplate Gothic Light, fantasy;
+        font-size: 150px;
+        padding:0px;
+	    margin:0px; 
+        margin-left: 100px;
+    }
+    .white-box {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 8px;
+    height: 520px;
+    padding: 0px;
+	left:80px;
+    animation-name: wb;
+    animation-duration: 4s;
+}
+@keyframes wb {
+  0%   {left:0px; }
+  100% { left:80px; }
+}
+.white-box2 {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 715px;
+    height: 8px;
+    padding: 0px;
+    top: 662px;
+	margin-left:80px;
+    animation-name: wbb;
+    animation-duration: 4s;
+}
+@keyframes wbb {
+  0%   {top:900px; }
+  100% { top:662px; }
+}
+#secondimg{
+        height:900px;
+        width: 1890px;
+        margin-top: 444px;
+        position: relative;
+        background-image: url("img/2.png");
+		margin-left:-8px;
+    }
+    #get{
+        font-size: 80px;
+        font-family: Copperplate Gothic Light;
+        top: 25%;
+        left: 7%;
+        position: relative ;
+        color: white;
+
+    }
+    #shopbtn{
+        position: relative;
+        top: 35%; 
+        right: 5%; 
+        height: 40px;
+        width: 90px;
+       background-color: #cd7cff;
+       border: 0px;
+        border-radius: 15px;
+        font-family: Comic Sans MS,CURSIVE ;    }
+	#thirdimg{
+        height:1000px;
+        width: 1890px;
+        position: relative;
+        background-image: url("img/3.jpg");
+		margin-left:-8px;
+    }
+	#stay{
+        font-size: 80px;
+        font-family: Copperplate Gothic Light;
+        top: 20%;
+        left: 10%;
+        position: relative ;
+        color: white;
+	}
+	#getw{
+		margin-top:429px;
+        font-size: 30px;
+        margin-left: 215px;
+        color: white;
+	}
+    #mbtn{
+        margin-left: 165px;
+        height: 35px;
+        width: 370px;
+        margin-top:-70px;
+        background-color: #cd7cff;
+        border: 0px;
+        border-radius: 15px;
+        font-family: Comic Sans MS,CURSIVE ;
+    }
+   
+</style>
+<body>
+    <div id="bar">
+        <a id="home">VMuscles</a>
+        <button onclick="store()" id="store">store</button>
+        <div class="dropdown">
+            <button class="dropbtn">explore</button>
+            <div class="dropdown-content">
+            <a href="Vmuscles/muscle.html">men</a>
+            
+            </div>
+        </div>
+        <button onclick="about()" id="about">about</button>
+        <button onclick="login()" id="login">login</button>
+    </div>
+    <div class="white-box"></div>
+    <div class="white-box2"></div>
+    <p id="shape">SHAPE</p>
+    <p id="your">YOUR</p>
+    <p id="body">BODY</p>
+    <div id="secondimg">
+    <a id="get">Get upto <br>40% off</a>
+    <button id="shopbtn" onclick="store()">SHOP NOW</button>
+    </div>
+	<div id="thirdimg">
+    <a id="stay">STAY FIT <br>AT HOME</a>
+	<p id="getw">Get Workouts Guide</p>
+    <button id="mbtn" onclick="men()"><b>click here</button>
+
+    </div>
+</body>
+</html>
+<script>
+    function store(){
+        window.location.href="store.html";
+    }
+    function about(){
+        window.location.href="about.html";
+    }
+    function login(){
+        window.location.href="login.html";
+    }
+    function men(){
+        window.location.href="Vmuscles/muscle.html";
+    }
+</script>
